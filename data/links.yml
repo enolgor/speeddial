@@ -18,12 +18,12 @@ tiles:
   bg_color: "#ffffff"
   txt_color: "#ff9900"
   tags: ["favorite", "shopping"]
--
-  name: "reddit"
-  url: "https://reddit.com"
-  img: "logos/reddit.svg"
-  bg_color: "#5f99cf"
-  txt_color: "#ffffff"
+#-
+#  name: "reddit"
+#  url: "https://reddit.com"
+#  img: "logos/reddit.svg"
+#  bg_color: "#5f99cf"
+#  txt_color: "#ffffff"
 -
   name: "spotify"
   url: "https://web.spotify.com"
@@ -104,6 +104,35 @@ tiles:
   name: "gmail"
   url: "https://accounts.google.com/signin/v2/identifier?service=mail"
   img: "logos/gmail.svg"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+  tags: ["work"]
+
+-
+  name: "weboas.is"
+  url: "https://weboas.is/"
+  img: "logos/weboasis.png"
+  bg_color: "#191414"
+  txt_color: "#000000"
+  tags: ["work"]
+
+- name: "reddit"
+  url: "https://reddit.com/r/all"
+  img: "logos/reddit.png"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+  tags: ["work"]
+
+- name: "meneame"
+  url: "https://meneame.net"
+  img: "logos/meneame.png"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+  tags: ["work"]
+
+- name: "público"
+  url: "https://publico.es"
+  img: "logos/publico.png"
   bg_color: "#ffffff"
   txt_color: "#000000"
   tags: ["work"]
