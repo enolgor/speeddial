@@ -109,6 +109,22 @@ tiles:
   tags: ["work"]
 
 -
+  name: "protonmail"
+  url: "https://mail.protonmail.com/login"
+  img: "logos/protonmail.png"
+  bg_color: "#7487bf"
+  txt_color: "#000000"
+  tags: ["work"]
+
+-
+  name: "outlook"
+  url: "https://outlook.live.com/mail/inbox/"
+  img: "logos/outlook.png"
+  bg_color: "#ffffff"
+  txt_color: "#000000"
+  tags: ["work"]
+
+-
   name: "weboas.is"
   url: "https://weboas.is/"
   img: "logos/weboasis.png"
