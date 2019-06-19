@@ -7,6 +7,6 @@
     "16": "favicon.png"
   },
    "chrome_url_overrides" : {
-     "newtab": "index.html"
+     "newtab": "index.html#work"
    }
 }
