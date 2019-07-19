@@ -126,7 +126,7 @@ tiles:
   bg_color: "#ffffff"
   tags: ["work"]
 
-- name: "wikipedia"
+- name: "wikipedia test"
   url: "https://es.wikipedia.org"
   img: "logos/wikipedia.svg"
   bg_color: "#ffffff"
