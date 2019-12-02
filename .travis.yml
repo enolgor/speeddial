@@ -9,7 +9,7 @@ script:
   - node .travis/update-version.js
   - hugo
 after_success:
-  - cd docs; rm speeddial.zip; zip -r speeddial.xpi *; cd ..
+  - cd docs; rm speeddial.xpi; zip -r speeddial.xpi *; cd ..
   - sudo sh .travis/push.sh
 env:
   global:
