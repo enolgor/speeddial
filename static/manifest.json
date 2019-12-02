@@ -11,6 +11,7 @@
   },
   "applications": {
     "gecko": {
+      "id": "{ef720942-f75b-49ae-a823-10424ccb67aa}",
       "update_url": "https://enolgor.es/speeddial/updates.json"
     }
   }
