@@ -8,9 +8,9 @@ const manifest = JSON.parse(fs.readFileSync(manifestFile));
 
 const updates = JSON.parse(fs.readFileSync(updatesFile));
 
-const commitMsg = process.env['TRAVIS_COMMIT'];
+const commitMsg = process.env['TRAVIS_COMMIT_MESSAGE'];
 
-console.log(`Commit: ${commitMsg}`);
+console.log(`Commit Message: ${commitMsg}`);
 
 if (commitMsg) {
   const [, version] = commitMsg.split('Version: ');
