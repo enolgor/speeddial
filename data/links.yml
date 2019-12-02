@@ -126,10 +126,4 @@ tiles:
   bg_color: "#ffffff"
   tags: ["work"]
 
-- name: "wikipedia test"
-  url: "https://es.wikipedia.org"
-  img: "logos/wikipedia.svg"
-  bg_color: "#ffffff"
-  tags: ["work"]
-
   # mmo-champion, intranet, kutxa, disroot, xataka, pocket
