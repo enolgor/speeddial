@@ -13,7 +13,7 @@ commit_website_files() {
 
 upload_files() {
   git remote add origin-pages https://${GH_TOKEN}@github.com/enolgor/speeddial.git > /dev/null 2>&1
-  git subtree push --quiet --set-upstream --prefix docs origin-pages gh-pages
+  git subtree push --prefix docs origin-pages gh-pages
 }
 
 setup_git
