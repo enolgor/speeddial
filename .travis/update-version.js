@@ -23,5 +23,3 @@ if (commitMsg) {
 
 fs.writeFileSync(manifestFile, JSON.stringify(manifest, null, 2));
 fs.writeFileSync(updatesFile, JSON.stringify(updates, null, 2));
-
-console.log(fs.readFileSync(manifestFile));
