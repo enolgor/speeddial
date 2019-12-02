@@ -10,9 +10,12 @@ const updates = JSON.parse(fs.readFileSync(updatesFile));
 
 const commitMsg = process.env['TRAVIS_COMMIT'];
 
+console.log(`Commit: ${commitMsg}`);
+
 if (commitMsg) {
   const [, version] = commitMsg.split('Version: ');
   if (version) {
+    console.log(`Detected version change: ${manifest.version} -> ${version}`);
     manifest.version = version.trim();
     updates.addons[addonUUID].updates[0].version = version.trim();
   }
