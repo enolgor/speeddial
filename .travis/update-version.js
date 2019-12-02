@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const manifestFile = 'static/manifest.json';
 const updatesFile = 'static/updates.json';
-const addonUUID = '{abcd1234-1abc-1234-12ab-abcdef123456}';
+const addonUUID = '{ef720942-f75b-49ae-a823-10424ccb67aa}';
 
 const manifest = JSON.parse(fs.readFileSync(manifestFile));
 
