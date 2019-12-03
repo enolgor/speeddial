@@ -4,6 +4,7 @@ node_js:
 install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
 - sudo dpkg -i /tmp/hugo.deb
+- npm install
 script:
 - hugo
 - npm run ffpackage
