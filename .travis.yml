@@ -1,11 +1,7 @@
-language: node_js
-node_js:
-- stable
 install:
 - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb
 - sudo dpkg -i /tmp/hugo.deb
 script:
-- node .travis/update-version.js
 - hugo
 after_success:
 - cd docs; rm speeddial.xpi; zip -r speeddial.xpi *; cd ..
