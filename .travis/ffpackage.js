@@ -36,7 +36,7 @@ const updatesFilePath = './docs/updates.json';
 
   if (lastVersion === version) {
     console.log('No new version to package');
-    return;
+    process.exit(1);
   }
 
   const result = await webExt.cmd.sign({
@@ -44,6 +44,7 @@ const updatesFilePath = './docs/updates.json';
     sourceDir: './docs',
     apiKey: process.env['WEB_EXT_API_KEY'],
     apiSecret: process.env['WEB_EXT_API_SECRET'],
+    channel: 'unlisted',
   },{
     shouldExitProgram: false,
   });
