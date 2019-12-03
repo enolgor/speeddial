@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/enolgor/speeddial#readme",
   "dependencies": {
+    "node-fetch": "^2.6.0",
     "web-ext": "^3.2.1"
   }
 }

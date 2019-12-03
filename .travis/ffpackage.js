@@ -1,6 +1,7 @@
 const { promisify } = require('util');
 const fs = require('fs');
 const webExt = require('web-ext').default;
+const fetch = require('node-fetch');
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
@@ -27,6 +28,17 @@ const updatesFilePath = './docs/updates.json';
   const version = manifestFile.version;
   const extensionID = manifestFile.applications.gecko.id;
 
+  const lastManifestRaw = await fetch(`${baseUrl}/manifest.json`, { method: 'Get' });
+  const lastManifest = await lastManifestRaw.json();
+  const lastVersion = lastManifest.version;
+
+  console.log(`Last version was: ${lastVersion}, version in manifest is: ${version}`);
+
+  if (lastVersion === version) {
+    console.log('No new version to package');
+    return;
+  }
+
   const result = await webExt.cmd.sign({
     artifactsDir: './docs',
     sourceDir: './docs',
@@ -45,7 +57,7 @@ const updatesFilePath = './docs/updates.json';
     }];
     await writeJson(updatesFilePath, updatesFile);
   }
-  
+
 })();
 
 
