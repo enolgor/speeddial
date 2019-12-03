@@ -1,0 +1,25 @@
+{
+  "name": "speeddial",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "ffpackage": "node .travis/ffpackage.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enolgor/speeddial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enolgor/speeddial/issues"
+  },
+  "homepage": "https://github.com/enolgor/speeddial#readme",
+  "dependencies": {
+    "web-ext": "^3.2.1"
+  }
+}
