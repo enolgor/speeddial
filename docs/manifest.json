@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Eneko SpeedDial",
+  "version": "2.7",
+  "description": "New tab page with own SpeedDial",
+  "icons": {
+    "16": "favicon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "{ef720942-f75b-49ae-a823-10424ccb67aa}",
+      "update_url": "https://enolgor.es/speeddial/updates.json"
+    }
+  }
+}
