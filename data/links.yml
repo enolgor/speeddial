@@ -1,7 +1,7 @@
 tiles:
 
 - name: "amazon"
-  url: "https://amazon.com"
+  url: "https://amazon.es"
   img: "logos/amazon.svg"
   bg_color: "#ffffff"
   tags: ["favorite", "shopping"]
